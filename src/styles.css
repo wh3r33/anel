@@ -1,0 +1,6 @@
+@import url('../styles.css');
+
+.reveal { opacity: 0; transform: translateY(44px); filter: blur(6px); transition: opacity 900ms var(--ease), transform 900ms var(--ease), filter 900ms var(--ease); }
+.reveal.is-visible { opacity: 1; transform: translateY(0); filter: blur(0); }
+.model-status.is-error { color: #ff765f; }
+@media (prefers-reduced-motion: reduce) { .reveal, .reveal.is-visible { opacity: 1; transform: none; filter: none; } }
